@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="N3w-Fq-Zf8" customClass="ProductCollectionCell" customModule="CaseStudy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3iv-bL-IwZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3iv-bL-IwZ" firstAttribute="top" secondItem="N3w-Fq-Zf8" secondAttribute="top" id="6pe-dY-WI2"/>
+                <constraint firstAttribute="bottom" secondItem="3iv-bL-IwZ" secondAttribute="bottom" id="RQv-5K-bHT"/>
+                <constraint firstAttribute="trailing" secondItem="3iv-bL-IwZ" secondAttribute="trailing" id="oqb-qi-GMu"/>
+                <constraint firstItem="3iv-bL-IwZ" firstAttribute="leading" secondItem="N3w-Fq-Zf8" secondAttribute="leading" id="zyE-l4-Bgo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgProduct" destination="3iv-bL-IwZ" id="Gaj-iA-1f7"/>
+            </connections>
+        </view>
+    </objects>
+</document>

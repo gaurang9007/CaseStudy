@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gYC-gn-4hL" customClass="ProductDeliveryOptionCell" customModule="CaseStudy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajW-e1-lq4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homedelivery" translatesAutoresizingMaskIntoConstraints="NO" id="OVo-kD-Fia">
+                            <rect key="frame" x="10" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="kbZ-pn-PDb"/>
+                                <constraint firstAttribute="width" constant="30" id="yB3-NY-ox5"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home delivery available" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="za4-xp-x0c">
+                            <rect key="frame" x="60" y="10" width="240" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="RMY-Zo-xmV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="store" translatesAutoresizingMaskIntoConstraints="NO" id="B0V-wP-gUT">
+                            <rect key="frame" x="10" y="55" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="fBI-ki-iSu"/>
+                                <constraint firstAttribute="width" constant="30" id="hrr-aW-Urx"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collect from Store available Check Stores" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joB-LE-M8h">
+                            <rect key="frame" x="60" y="46" width="314" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="BwY-lX-GTc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="za4-xp-x0c" firstAttribute="top" secondItem="ajW-e1-lq4" secondAttribute="top" constant="10" id="2Vm-Ia-5X5"/>
+                        <constraint firstAttribute="bottom" secondItem="B0V-wP-gUT" secondAttribute="bottom" constant="10" id="3dt-49-djf"/>
+                        <constraint firstItem="B0V-wP-gUT" firstAttribute="top" secondItem="OVo-kD-Fia" secondAttribute="bottom" constant="15" id="CYK-nP-EVA"/>
+                        <constraint firstItem="B0V-wP-gUT" firstAttribute="leading" secondItem="ajW-e1-lq4" secondAttribute="leading" constant="10" id="EfM-pg-d0w"/>
+                        <constraint firstItem="za4-xp-x0c" firstAttribute="leading" secondItem="OVo-kD-Fia" secondAttribute="trailing" constant="20" id="JmG-M9-12p"/>
+                        <constraint firstItem="OVo-kD-Fia" firstAttribute="leading" secondItem="ajW-e1-lq4" secondAttribute="leading" constant="10" id="K3X-xP-bFV"/>
+                        <constraint firstItem="OVo-kD-Fia" firstAttribute="top" secondItem="ajW-e1-lq4" secondAttribute="top" constant="10" id="SLF-uw-Qvg"/>
+                        <constraint firstAttribute="bottom" secondItem="joB-LE-M8h" secondAttribute="bottom" constant="1" id="bWm-6p-XMb"/>
+                        <constraint firstAttribute="trailing" secondItem="joB-LE-M8h" secondAttribute="trailing" constant="1" id="dHt-a4-pZ7"/>
+                        <constraint firstItem="joB-LE-M8h" firstAttribute="leading" secondItem="B0V-wP-gUT" secondAttribute="trailing" constant="20" id="ee6-d3-YE0"/>
+                        <constraint firstItem="joB-LE-M8h" firstAttribute="top" secondItem="za4-xp-x0c" secondAttribute="bottom" constant="6" id="gWG-go-2uU"/>
+                        <constraint firstAttribute="trailing" secondItem="za4-xp-x0c" secondAttribute="trailing" constant="75" id="jId-Cq-1kw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ajW-e1-lq4" firstAttribute="top" secondItem="gYC-gn-4hL" secondAttribute="top" id="NJD-8a-qjl"/>
+                <constraint firstItem="ajW-e1-lq4" firstAttribute="leading" secondItem="gYC-gn-4hL" secondAttribute="leading" id="SLV-Au-CMP"/>
+                <constraint firstAttribute="bottom" secondItem="ajW-e1-lq4" secondAttribute="bottom" id="c3o-kT-UAx"/>
+                <constraint firstAttribute="trailing" secondItem="ajW-e1-lq4" secondAttribute="trailing" id="fQw-aW-RIW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="53.5" y="124.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="homedelivery" width="30" height="30"/>
+        <image name="store" width="30" height="30"/>
+    </resources>
+</document>

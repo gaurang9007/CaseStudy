@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="OQm-Et-DAJ" customClass="ProductSizeViewCell" customModule="CaseStudy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1yl-6r-Ztn" customClass="TagListView" customModule="CaseStudy" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tagSelectedBackgroundColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tagHighlightedBackgroundColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                            <real key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="marginY">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="marginX">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                            <color key="value" red="1" green="0.60228303130000005" blue="0.047975758010000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHX-K8-QUW">
+                    <rect key="frame" x="0.0" y="100" width="375" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="QUANTITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aQ-E2-eTa">
+                            <rect key="frame" x="10" y="15" width="89" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.61955410239999997" green="0.61964344979999997" blue="0.61952602859999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6V2-u0-qM8" customClass="CustomePickerView" customModule="CaseStudy" customModuleProvider="target">
+                            <rect key="frame" x="109" y="10" width="257" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dropdown_icon" translatesAutoresizingMaskIntoConstraints="NO" id="GB6-IB-Kvu">
+                            <rect key="frame" x="327" y="15" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="yvm-b3-nJc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YcE-Qx-5be">
+                    <rect key="frame" x="0.0" y="160" width="375" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUN-pr-Zmb">
+                            <rect key="frame" x="10" y="0.0" width="355" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.60366177560000001" green="0.66964739559999997" blue="0.62108629940000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="ADD TO BAG">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnAddBagClicked:" destination="OQm-Et-DAJ" eventType="touchUpInside" id="9q1-Gq-S2Q"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="U9F-yk-Qv9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1yl-6r-Ztn" firstAttribute="leading" secondItem="OQm-Et-DAJ" secondAttribute="leading" id="GVB-mg-XZc"/>
+                <constraint firstItem="YcE-Qx-5be" firstAttribute="top" secondItem="CHX-K8-QUW" secondAttribute="bottom" id="H0F-wF-TiK"/>
+                <constraint firstAttribute="trailing" secondItem="1yl-6r-Ztn" secondAttribute="trailing" id="JfH-28-0qN"/>
+                <constraint firstAttribute="trailing" secondItem="YcE-Qx-5be" secondAttribute="trailing" id="Kah-8C-hoG"/>
+                <constraint firstItem="1yl-6r-Ztn" firstAttribute="top" secondItem="OQm-Et-DAJ" secondAttribute="top" id="L3c-m2-Ped"/>
+                <constraint firstAttribute="trailing" secondItem="CHX-K8-QUW" secondAttribute="trailing" id="O9A-ut-bFg"/>
+                <constraint firstItem="CHX-K8-QUW" firstAttribute="leading" secondItem="OQm-Et-DAJ" secondAttribute="leading" id="c09-6u-pQY"/>
+                <constraint firstItem="YcE-Qx-5be" firstAttribute="top" secondItem="CHX-K8-QUW" secondAttribute="bottom" id="flW-t6-ayO"/>
+                <constraint firstAttribute="bottom" secondItem="YcE-Qx-5be" secondAttribute="bottom" id="jGh-2p-wWu"/>
+                <constraint firstItem="YcE-Qx-5be" firstAttribute="leading" secondItem="OQm-Et-DAJ" secondAttribute="leading" id="kGn-dA-ETk"/>
+                <constraint firstItem="CHX-K8-QUW" firstAttribute="top" secondItem="1yl-6r-Ztn" secondAttribute="bottom" id="vaf-oE-x6B"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnAddBag" destination="PUN-pr-Zmb" id="mjo-vD-oAd"/>
+                <outlet property="pickerQuantity" destination="6V2-u0-qM8" id="b0d-3E-pV1"/>
+                <outlet property="productTagListView" destination="1yl-6r-Ztn" id="C1B-mn-Bfg"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="dropdown_icon" width="30" height="30"/>
+    </resources>
+</document>
